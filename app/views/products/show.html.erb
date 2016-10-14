@@ -1,0 +1,19 @@
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+ 
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @product.user.email %>
+</p>
+
+<%= link_to "Destroy product", @product, method: :delete, :class => "btn btn-default" %>
+
+
+<%= link_to "Go to index", products_path %>
